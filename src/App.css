@@ -47,15 +47,17 @@
   padding: 10% 4%;
 }
 
-.nav img {
+/* .nav img {
   width: 50%;
-}
+} */
 
 /* -----------------about section------------------ */
 .about {
   background: none;
   margin: auto;
   margin-top: 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .about div {
@@ -67,36 +69,42 @@
 }
 
 .about div:first-child {
-  width: 50%;
   text-align: center;
+  height: 25%;
 }
 
-.about div:nth-child(2) {
+.about div:nth-child(3) {
   text-align: center;
+  height: 75%;
 }
 
 .about img {
-  width: 50%;
   box-shadow: 7px 7px 15px black;
   border-radius: 5px;
+  width: 100%;
   margin: 1%;
-  float: right;
 }
 
-
-
-
-
-
-
-
-
-
+/* -----------------Projects------------------ */
 
 .projects {
+  clear: both;
   background-color: cadetblue;
   width: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .p-experience {
   background-color: coral;
