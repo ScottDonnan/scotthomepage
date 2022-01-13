@@ -81,8 +81,8 @@
   background: none;
   margin: auto;
   margin-top: 10%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
 }
 
 .about div {
@@ -106,7 +106,7 @@
 .about img {
   box-shadow: 7px 7px 15px black;
   border-radius: 5px;
-  width: 100%;
+  width: 50%;
   margin: 1%;
 }
 
@@ -122,26 +122,19 @@
   width: 80%;
 }
 
+/* -----------------Prof Experience------------------ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-.p-experience {
-  background-color: coral;
+.prof-exp {
+  background-color: beige;
 }
+
+/* -----------------Education------------------ */
 
 .education {
   background-color: cornflowerblue;
 }
+
+/* -----------------Links------------------ */
 
 .links {
   background-color: darkkhaki;

@@ -27,8 +27,10 @@ function ProfessionalExperience() {
 
     return(
         <div className="main-section">
-            <h1>Professional Experience</h1>
-            {appleExperience.roles.map((role, index) => <ExperienceCard key={index} company={appleExperience.company} name={role.name} location={role.location} year={role.year} description={role.description} bullets={role.bullets}/>)}
+            <div className="prof-exp">
+                <h1>Professional Experience</h1>
+                {appleExperience.roles.map((role, index) => <ExperienceCard key={index} company={appleExperience.company} name={role.name} location={role.location} year={role.year} description={role.description} bullets={role.bullets}/>)}
+            </div>
         </div>
     )
 }

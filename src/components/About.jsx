@@ -1,9 +1,11 @@
 import '../App.css'
 import scott from '../images/IMG_4311.jpeg'
+import {useRef} from 'react'
 
 function About() {
+    const about = useRef(null)
     return(
-        <div className="main-section">
+        <div ref={about} className="main-section">
             <div className="about">
                 <div>
                     <h1>Scott Donnan</h1>
