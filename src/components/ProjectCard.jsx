@@ -1,9 +1,10 @@
-function ProjectCard({title, demoLink, githubLink, demoVid}) {
+function ProjectCard({title, demoLink, githubLink, demoVid, screenWidth}) {
+    
     return(
         <div>
             <a href={demoLink}>{title}</a>
             <a href={githubLink}>Github</a>
-            {demoVid}
+            {screenWidth >= 1464 ? demoVid : <p>put small picture here</p>}
         </div>
     )
 }
