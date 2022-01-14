@@ -77,9 +77,26 @@
 /* -----------------Projects------------------ */
 
 .projects {
-  clear: both;
   background-color: cadetblue;
-  width: 80%;
+  border-radius: 5px;
+  margin: 1%;
+}
+
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project-container div {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: brown;
 }
 
 /* -----------------Prof Experience------------------ */
@@ -90,12 +107,16 @@
 
 /* -----------------Education------------------ */
 
-.education {
+#education {
   background-color: cornflowerblue;
+  border-radius: 5px;
+  margin: 1%;
 }
 
 /* -----------------Links------------------ */
 
-.links {
+#links {
   background-color: darkkhaki;
+  border-radius: 5px;
+  margin: 1%;
 }

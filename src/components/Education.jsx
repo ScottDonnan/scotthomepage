@@ -3,7 +3,7 @@ import EducationCard from "./EducationCard"
 function Education() {
     return(
         <div className="main-section">
-            <div className="education">
+            <div id="education">
                 <h1>Education</h1>
                 <EducationCard />
             </div>
