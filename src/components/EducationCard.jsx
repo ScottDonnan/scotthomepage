@@ -1,10 +1,9 @@
-function EducationCard() {
+function EducationCard({name, location, degree}) {
     return(
         <div>
-            <h3>School</h3>
-            <p>Location</p>
-            <p>Years</p>
-            <p>Degree</p>
+            <h3>{name}</h3>
+            <p>{location}</p>
+            <p>{degree}</p>
         </div>
     )
 }
