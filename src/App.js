@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Education from './components/Education';
 import {Routes, Route} from "react-router-dom"
-import {useRef} from 'react'
+import {useRef, useEffect} from 'react'
 
 function App() {
   const linkEl = useRef(null)

@@ -10,7 +10,8 @@ function Links() {
                 <h1>Links</h1>
                 <a href="https://github.com/ScottDonnan">Github</a>
                 <a href="https://www.linkedin.com/in/scott-donnan">LinkedIn</a>
-                <p>Scott.Donnan@me.com</p>
+                <span>Scott.Donnan@me.com</span>
+                <span>(512) 567-7434</span>
             </div>
         </div>
     )

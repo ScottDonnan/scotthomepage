@@ -14,8 +14,8 @@ function Projects() {
     useEffect(() => {
         function handleResize() {
             setScreenWidth(window.innerWidth)
-            console.log(screenWidth)
         }
+        
         window.addEventListener('resize', handleResize)
     }) 
 
