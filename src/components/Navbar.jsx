@@ -16,7 +16,7 @@ function Navbar({goToSection, aboutEl, projectsEl, linkEl, educationEl}) {
     //                     </ul>
     
     return(
-        <nav>
+        <nav id='nav'>
             <ul>
                 <a href="#" onClick={(e) => goToSection(aboutEl, e)}>About</a>
                 <a href="#" onClick={(e) => goToSection(projectsEl, e)}>Projects</a>
