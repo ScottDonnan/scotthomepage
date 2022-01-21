@@ -99,6 +99,10 @@
   border-color: brown;
 }
 
+.projects img {
+  width: 90%;
+}
+
 /* -----------------Prof Experience------------------ */
 
 .prof-exp {
