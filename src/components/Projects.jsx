@@ -38,9 +38,9 @@ function Projects() {
                 <Routes>
                     <Route path='/' element={<ProjectList />} />
                     <Route path='runetrade' element={<ProjectCard title={"RuneTrade"} link={"https://runetrade.herokuapp.com/"} demoLink={runetradeDemo} githubLink={"https://github.com/ScottDonnan/traderune"} demoVid={runeTradeVid} screenWidth={screenWidth} />} />
-                    <Route path='dictionary' element={<ProjectCard title={"Dictionary App"} link={"https://dictionary-thesaurus.herokuapp.com/"} demoLink={dictionaryDemo} githubLink={"https://github.com/ScottDonnan/dictionary-thesaurus"} githubBackendLink={"https://github.com/ScottDonnan/phase-2-project-dictionary-backend"} />} />
-                    <Route path='deckbuilder' element={<ProjectCard title={"Deck Builder App"} demoLink={deckBuildingDemo} githubLink={"https://github.com/ScottDonnan/phase-3-project-frontend"} githubBackendLink={"https://github.com/ScottDonnan/phase-3-project-backend"} />} />
-                    <Route path='dandd' element={<ProjectCard title={"Dungeons & Dragons Monster Compendium"} githubLink={"https://github.com/ScottDonnan/monster-project"} siteThumb={ddThumb}/> }/>
+                    <Route path='dictionary' element={<ProjectCard title={"Dictionary App"} link={"https://dictionary-thesaurus.herokuapp.com/"} demoLink={dictionaryDemo} githubLink={"https://github.com/ScottDonnan/dictionary-thesaurus"} githubBackendLink={"https://github.com/ScottDonnan/phase-2-project-dictionary-backend"} screenWidth={screenWidth} />} />
+                    <Route path='deckbuilder' element={<ProjectCard title={"Deck Builder App"} demoLink={deckBuildingDemo} githubLink={"https://github.com/ScottDonnan/phase-3-project-frontend"} githubBackendLink={"https://github.com/ScottDonnan/phase-3-project-backend"} screenWidth={screenWidth} />} />
+                    <Route path='dandd' element={<ProjectCard title={"Dungeons & Dragons Monster Compendium"} githubLink={"https://github.com/ScottDonnan/monster-project"} siteThumb={ddThumb} screenWidth={screenWidth}/> }/>
                 </Routes>
             </div>
         </div>

@@ -80,6 +80,7 @@
   background-color: cadetblue;
   border-radius: 5px;
   margin: 1%;
+  text-align: center;
 }
 
 #project-container {
@@ -103,9 +104,39 @@
   width: 90%;
 }
 
-.projects iframe {
-  width: 90%;
-  height: 70%;
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project-list a {
+  width: 40%;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin: 2%;
+}
+
+#project-list a:hover {
+  transform: translate(5px, -5px);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#small-frame {
+  width: 70%;
+  height: 100%;
+}
+
+#large-frame {
+  max-width: 640px;
+  width: 70%;
 }
 
 /* -----------------Prof Experience------------------ */
