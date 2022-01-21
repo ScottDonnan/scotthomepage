@@ -219,4 +219,22 @@ ul {
   background-color: darkkhaki;
   border-radius: 5px;
   margin: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#prof-links {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
