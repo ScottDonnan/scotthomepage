@@ -6,10 +6,16 @@ import ddThumb from '../images/d&d-thumb.png'
 import ProjectListCard from "./ProjectListCard"
 import {Link} from 'react-router-dom'
 
-function ProjectList() {
-    
+function ProjectList({screenWidth}) {
+    let projectsClass;
+    if (screenWidth > 800) {
+        projectsClass = 'project-list-large'
+    } else {
+        projectsClass = 'project-list-small'
+    }
+
     return (
-        <div id="project-list">
+        <div id={projectsClass}>
             <Link to="runetrade">
                 <ProjectListCard title={"RuneTrade"} pageThumb={runetradeThumb} projectLink={"runetrade"}/>
             </Link>

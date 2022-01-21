@@ -29,14 +29,12 @@ function Projects() {
         window.addEventListener('resize', handleResize)
     }) 
 
-    // <div id="project-container">
-
     return(
         <div className="main-section">
             <div className="projects">            
                 <h1>Projects</h1>
                 <Routes>
-                    <Route path='/' element={<ProjectList />} />
+                    <Route path='/' element={<ProjectList screenWidth={screenWidth}/>} />
                     <Route path='runetrade' element={<ProjectCard title={"RuneTrade"} link={"https://runetrade.herokuapp.com/"} demoLink={runetradeDemo} githubLink={"https://github.com/ScottDonnan/traderune"} demoVid={runeTradeVid} screenWidth={screenWidth} />} />
                     <Route path='dictionary' element={<ProjectCard title={"Dictionary App"} link={"https://dictionary-thesaurus.herokuapp.com/"} demoLink={dictionaryDemo} githubLink={"https://github.com/ScottDonnan/dictionary-thesaurus"} githubBackendLink={"https://github.com/ScottDonnan/phase-2-project-dictionary-backend"} screenWidth={screenWidth} />} />
                     <Route path='deckbuilder' element={<ProjectCard title={"Deck Builder App"} demoLink={deckBuildingDemo} githubLink={"https://github.com/ScottDonnan/phase-3-project-frontend"} githubBackendLink={"https://github.com/ScottDonnan/phase-3-project-backend"} screenWidth={screenWidth} />} />

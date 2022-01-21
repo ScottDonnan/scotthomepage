@@ -13,10 +13,10 @@ function Navbar({goToSection, aboutEl, projectsEl, linkEl, educationEl}) {
     return(
         <nav id='nav'>
             <ul>
-                <a href="#" onClick={(e) => goToSection(aboutEl, e)}>About</a>
-                <a href="#" onClick={(e) => goToSection(projectsEl, e)}>Projects</a>
+                <a href="#" onClick={(e) => goToSection(aboutEl, e)}>ABOUT</a>
+                <a href="#" onClick={(e) => goToSection(projectsEl, e)}>PROJECTS</a>
                 {/* <a href='#' onClick={(e) => goToSection(educationEl, e)}>Education</a> */}
-                <a href="#" onClick={(e) => goToSection(linkEl, e)}>Links</a>
+                <a href="#" onClick={(e) => goToSection(linkEl, e)}>CONTACT</a>
             </ul>
         </nav>
     )
