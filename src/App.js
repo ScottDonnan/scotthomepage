@@ -8,15 +8,25 @@ import Projects from './components/Projects';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Education from './components/Education';
 import {Routes, Route} from "react-router-dom"
-import {useRef, useEffect} from 'react'
+import {useRef, useEffect, useState} from 'react'
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
   const linkEl = useRef(null)
   const educationEl = useRef(null)
   const aboutEl = useRef(null)
   const projectsEl = useRef(null)
   const navEl = useRef(null)
 
+  useEffect(() => {
+    function handleResize() {
+        setScreenWidth(window.innerWidth)
+    }
+      
+    window.addEventListener('resize', handleResize)
+  })
+  
   function goToSection(reference, e) {
     e.preventDefault()
     reference.current.scrollIntoView({behavior: 'smooth'})
@@ -25,13 +35,13 @@ function App() {
   return (
     <div>
       <div ref={navEl}>
-        <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl}/>
+        <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
       </div>
       <div ref={aboutEl}>
         <About />
       </div>
       <div ref={projectsEl}>
-        <Projects />
+        <Projects screenWidth={screenWidth}/>
       </div>
       {/* <div ref={educationEl}>
         <ProfessionalExperience />

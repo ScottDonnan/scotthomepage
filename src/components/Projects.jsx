@@ -11,8 +11,7 @@ import ProjectCard from './ProjectCard'
 import {Routes, Route} from 'react-router-dom'
 import ProjectList from './ProjectList'
 
-function Projects() {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+function Projects({screenWidth}) {
     const runeTradeVid = <video width="500" controls>
                             <source src={runeTradeDemo} type="video/mp4"/>
                         </video>
@@ -20,14 +19,6 @@ function Projects() {
     const runetradeDemo = "https://drive.google.com/file/d/1Vny6HgpKgiQVFQOFlHf09zIubKAAHTUJ/preview"
     const dictionaryDemo = "https://drive.google.com/file/d/1hoCL4HC74nOjrJstKOhBY7JK1rmQDe09/preview"
     const deckBuildingDemo = "https://drive.google.com/file/d/1iX1pzU66mTGpyzd2kyDtX-rFN2UIaJ-m/preview"
-    
-    useEffect(() => {
-        function handleResize() {
-            setScreenWidth(window.innerWidth)
-        }
-        
-        window.addEventListener('resize', handleResize)
-    }) 
 
     return(
         <div className="main-section">

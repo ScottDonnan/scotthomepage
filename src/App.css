@@ -20,8 +20,13 @@ h1 {
   font-size: x-large;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* -----------------navbar section------------------ */
-#nav {
+#nav-list-large {
   /* background-color: aquamarine; */
   position: fixed;
   top: 10%;
@@ -29,22 +34,42 @@ h1 {
   height: 25%;
 }
 
-#nav ul{
+#nav-list-large ul{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
 }
 
-#nav a {
+#nav-list-large a {
   /* margin: 1%, 5%; */
   border-radius: 5px;
   padding: 10px;
   margin-top: 20%;
-
 }
 
-#nav a:hover {
+#nav-list-large a:hover {
+  background-color: brown;
+  color: white
+}
+
+#nav-list-small {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-list-small ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-top: 2%;
+}
+#nav-list-small a{
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#nav-list-small a:hover {
   background-color: brown;
   color: white
 }
