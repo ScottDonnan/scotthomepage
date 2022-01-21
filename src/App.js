@@ -36,9 +36,9 @@ function App() {
       {/* <div ref={educationEl}>
         <ProfessionalExperience />
       </div> */}
-      <div ref={educationEl}>
+      {/* <div ref={educationEl}>
         <Education />
-      </div>
+      </div> */}
       <div ref={linkEl}>
         <Links /> 
       </div>
