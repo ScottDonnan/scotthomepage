@@ -108,12 +108,17 @@ ul {
 .about img {
   box-shadow: 7px 7px 15px black;
   border-radius: 5px;
+  max-height: 200px;
   width: 50%;
   margin: 1%;
 }
 
 .nav-stage img {
   width: 25%;
+}
+
+#pic-summary {
+  display: flex;
 }
 
 /* -----------------Projects------------------ */
@@ -220,6 +225,9 @@ ul {
   border-radius: 5px;
   margin: 1%;
   text-align: center;
+}
+
+#link-forms {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,12 +237,28 @@ ul {
   border-style: solid;
   border-width: 1px;
   border-color: black;
-  display: flex;
-  flex-direction: column;
+  margin: 2%;
+  width: 100%;
+}
+
+#prof-links a {
+  padding: 5px;
+  margin: 1%;
 }
 
 #contact {
   border-style: solid;
   border-width: 1px;
   border-color: black;
+  grid-column-start: first;
+}
+
+#links form {
+  /* display: flex;
+  flex-direction: column; */
+  width: 60%;
+}
+
+#content {
+  resize: none;
 }
