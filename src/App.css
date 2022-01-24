@@ -5,6 +5,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-align: center;
 }
 
 .main-section {
@@ -14,6 +15,7 @@
 
 a {
   text-decoration: none;
+  color: aliceblue;
 }
 
 h1 {
@@ -79,15 +81,7 @@ ul {
 
 
 /* -----------------about section------------------ */
-.about {
-  background: none;
-  margin: auto;
-  margin-top: 10%;
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
-}
-
-.about div {
+#about {
   background-color: wheat;
   box-shadow: 5px 5px 10px black;
   border-radius: 5px;
@@ -95,7 +89,15 @@ ul {
   padding: 1%;
 }
 
-.about div:first-child {
+/* .about div {
+  background-color: wheat;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+} */
+
+/* .about div:first-child {
   text-align: center;
   height: 25%;
 }
@@ -103,24 +105,36 @@ ul {
 .about div:nth-child(3) {
   text-align: center;
   height: 75%;
-}
+} */
 
-.about img {
-  box-shadow: 7px 7px 15px black;
-  border-radius: 5px;
-  max-height: 200px;
-  width: 50%;
-  margin: 1%;
-}
-
-.nav-stage img {
-  width: 25%;
-}
-
-#pic-summary {
+#summary-large {
   display: flex;
+  justify-content: end; 
+  /* margin: 1%;
+  padding: 1%; */
 }
 
+#summary-large div {
+  width: 50%;
+  background-color: wheat;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+}
+
+#summary-small {
+  display: flex;
+  justify-content: end;
+}
+
+#summary-small div {
+  background-color: wheat;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+}
 /* -----------------Projects------------------ */
 
 .projects {
@@ -160,9 +174,9 @@ ul {
 #project-list-large a {
   width: 40%;
   text-align: center;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: 1px; */
   margin: 2%;
 }
 
@@ -176,9 +190,9 @@ ul {
 }
 #project-list-small a {
   width: 80%;
-  text-align: center;
+  /* text-align: center;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
   border-width: 1px;
   margin: 2%;
 
@@ -220,7 +234,15 @@ ul {
 
 /* -----------------Links------------------ */
 
-#links {
+#links-large {
+  background-color: darkkhaki;
+  border-radius: 5px;
+  margin: 1%;
+  text-align: center;
+  width: 50%;
+}
+
+#links-small {
   background-color: darkkhaki;
   border-radius: 5px;
   margin: 1%;
@@ -234,9 +256,9 @@ ul {
 }
 
 #prof-links {
-  border-style: solid;
+  /* border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: black; */
   margin: 2%;
   width: 100%;
 }
@@ -246,17 +268,15 @@ ul {
   margin: 1%;
 }
 
-#contact {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  grid-column-start: first;
+#linked-in-logo {
+  width: 32px;
 }
 
-#links form {
-  /* display: flex;
-  flex-direction: column; */
-  width: 60%;
+#contact-form {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  width: 80%
 }
 
 #content {

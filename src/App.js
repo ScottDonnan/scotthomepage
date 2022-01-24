@@ -38,7 +38,7 @@ function App() {
         <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
       </div>
       <div ref={aboutEl}>
-        <About />
+        <About screenWidth={screenWidth}/>
       </div>
       <div ref={projectsEl}>
         <Projects screenWidth={screenWidth}/>
@@ -50,8 +50,9 @@ function App() {
         <Education />
       </div> */}
       <div ref={linkEl}>
-        <Links /> 
+        <Links screenWidth={screenWidth}/> 
       </div>
+      <a href="#" onClick={(e) => goToSection(navEl, e)}>BACK TO TOP</a>
     </div>
   );
 }
