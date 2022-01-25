@@ -9,7 +9,7 @@ function Projects({screenWidth}) {
     //                         <source src={runeTradeDemo} type="video/mp4"/>
     //                     </video>
 
-    const runetradeDemo = "https://drive.google.com/file/d/1Vny6HgpKgiQVFQOFlHf09zIubKAAHTUJ/preview"
+    const runetradeDemo = "https://www.youtube.com/embed/QKCvQ8hZCig"
     const dictionaryDemo = "https://drive.google.com/file/d/1hoCL4HC74nOjrJstKOhBY7JK1rmQDe09/preview"
     const deckBuildingDemo = "https://drive.google.com/file/d/1iX1pzU66mTGpyzd2kyDtX-rFN2UIaJ-m/preview"
 
