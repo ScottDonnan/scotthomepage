@@ -1,6 +1,7 @@
 
 .body {
-  background: url(./images/cosmic-timetraveler--SFhuMwFClk-unsplash.jpg) no-repeat center center fixed;
+  /* background: url(./images/cosmic-timetraveler--SFhuMwFClk-unsplash.jpg) no-repeat center center fixed; */
+  background-color: #264653;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,18 +9,25 @@
   text-align: center;
 }
 
-.main-section {
+.container {
   width: 80%;
-  margin: auto;
+  margin: 50px;
+}
+
+#test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #e76f51;
 }
 
 h1 {
-  font-size: x-large;
+  font-size: 7vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -27,10 +35,31 @@ ul {
   margin: 0;
 }
 
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#to-top-button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 2%;
+  
+}
+
+#to-top-button:hover {
+  background-color: #f4a261;
+  color: white
+}
+
+/* .container {
+  margin: 50px, 0;
+} */
+
 /* -----------------navbar section------------------ */
 #nav-list-large {
   /* background-color: aquamarine; */
   position: fixed;
+  left: 0;
   top: 10%;
   width: 10%;
   height: 25%;
@@ -51,7 +80,7 @@ ul {
 }
 
 #nav-list-large a:hover {
-  background-color: brown;
+  background-color: #f4a261;
   color: white
 }
 
@@ -72,7 +101,7 @@ ul {
 }
 
 #nav-list-small a:hover {
-  background-color: brown;
+  background-color: #f4a261;
   color: white
 }
 
@@ -82,7 +111,7 @@ ul {
 
 /* -----------------about section------------------ */
 #about {
-  background-color: wheat;
+  background-color: #2a9d8f;
   box-shadow: 5px 5px 10px black;
   border-radius: 5px;
   margin: 1%;
@@ -116,7 +145,7 @@ ul {
 
 #summary-large div {
   width: 50%;
-  background-color: wheat;
+  background-color: #94d2bd;
   box-shadow: 5px 5px 10px black;
   border-radius: 5px;
   margin: 1%;
@@ -129,7 +158,7 @@ ul {
 }
 
 #summary-small div {
-  background-color: wheat;
+  background-color: #94d2bd;
   box-shadow: 5px 5px 10px black;
   border-radius: 5px;
   margin: 1%;
@@ -138,10 +167,16 @@ ul {
 /* -----------------Projects------------------ */
 
 .projects {
-  background-color: cadetblue;
+  background-color: #2a9d8f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
   border-radius: 5px;
   margin: 1%;
   text-align: center;
+}
+
+.projects h1 {
+  padding-top: 10px;
 }
 
 #project-container {
@@ -161,6 +196,15 @@ ul {
   border-color: brown;
 }
 
+.project-list-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-list-card h1 {
+  font-size: 4vw;
+}
+
 .projects img {
   width: 90%;
 }
@@ -174,6 +218,8 @@ ul {
 #project-list-large a {
   width: 40%;
   text-align: center;
+  color: black;
+  background-color: #f4a261;
   /* border-style: solid;
   border-color: black;
   border-width: 1px; */
@@ -190,6 +236,7 @@ ul {
 }
 #project-list-small a {
   width: 80%;
+  color: black;
   /* text-align: center;
   border-style: solid;
   border-color: black; */
@@ -234,20 +281,22 @@ ul {
 
 /* -----------------Links------------------ */
 
-#links-large {
-  background-color: darkkhaki;
+/* #links-large {
+  background-color: #2a9d8f;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
   margin: 1%;
   text-align: center;
   width: 50%;
-}
+} */
 
-#links-small {
-  background-color: darkkhaki;
+/* #links-small {
+  background-color: #2a9d8f;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
   margin: 1%;
   text-align: center;
-}
+} */
 
 #link-forms {
   display: flex;
@@ -281,4 +330,35 @@ ul {
 
 #content {
   resize: none;
+}
+
+.form-input {
+  height: 25px;
+  width:100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#submit-button {
+  width: 80px;
+  margin-top: 10px;
+  /* background-color: blue; */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#submit-button:hover {
+  background-color: #f4a261;
+  color: white;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 100%;
+}
+
+#email {
+  color: #ca6702;
+  font-size: 3vw;
 }

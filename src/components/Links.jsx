@@ -39,16 +39,16 @@ function Links({screenWidth}) {
         <div ref={links} className="main-section">
             <div id={linksClass}>
                 <h1>Lets get in touch!</h1>
-                <p>Scott.Donnan@me.com</p>
+                <p id="email" >Scott.Donnan@me.com</p>
                 <div id="link-forms">
-                    <form id="contact-form" onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                         <label for="name">Name</label><br/>
-                        <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/><br/>
+                        <input className="form-input" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/><br/>
                         <label for="email">Email</label><br/>
-                        <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
+                        <input className="form-input" type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
                         <lable for="content">Content</lable><br/>
-                        <textarea rows="3" cols="18" id="content" name="content" value={content} onChange={(e) => setContent(e.target.value)}/><br/>
-                        <input type="submit"/> 
+                        <textarea rows="3" cols="30" id="content" name="content" value={content} onChange={(e) => setContent(e.target.value)}/><br/>
+                        <input id="submit-button" type="submit"/> 
                     </form>
                     <div id="prof-links">
                         <a href="https://github.com/ScottDonnan">

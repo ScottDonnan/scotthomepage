@@ -33,14 +33,14 @@ function App() {
   }
   
   return (
-    <div>
+    <div id="test">
       <div ref={navEl}>
         <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
       </div>
-      <div ref={aboutEl}>
+      <div className="container" ref={aboutEl}>
         <About screenWidth={screenWidth}/>
       </div>
-      <div ref={projectsEl}>
+      <div className="container" ref={projectsEl}>
         <Projects screenWidth={screenWidth}/>
       </div>
       {/* <div ref={educationEl}>
@@ -49,10 +49,10 @@ function App() {
       {/* <div ref={educationEl}>
         <Education />
       </div> */}
-      <div ref={linkEl}>
+      <div className="container" ref={linkEl}>
         <Links screenWidth={screenWidth}/> 
       </div>
-      <a href="#" onClick={(e) => goToSection(navEl, e)}>BACK TO TOP</a>
+      <a id="to-top-button" href="#" onClick={(e) => goToSection(navEl, e)}>BACK TO TOP</a>
     </div>
   );
 }
