@@ -1,13 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import Homepage from './components/Hompage';
 import About from './components/About'
 import Navbar from './components/Navbar';
 import Links from './components/Links';
 import Projects from './components/Projects';
-import ProfessionalExperience from './components/ProfessionalExperience';
-import Education from './components/Education';
-import {Routes, Route} from "react-router-dom"
 import {useRef, useEffect, useState} from 'react'
 
 function App() {
@@ -43,24 +38,12 @@ function App() {
       <div className="container" ref={projectsEl}>
         <Projects screenWidth={screenWidth}/>
       </div>
-      {/* <div ref={educationEl}>
-        <ProfessionalExperience />
-      </div> */}
-      {/* <div ref={educationEl}>
-        <Education />
-      </div> */}
       <div className="container" ref={linkEl}>
         <Links screenWidth={screenWidth}/> 
       </div>
-      <a id="to-top-button" href="#" onClick={(e) => goToSection(navEl, e)}>BACK TO TOP</a>
+      <button id="to-top-button" href="#" onClick={(e) => goToSection(navEl, e)}>BACK TO TOP</button>
     </div>
   );
 }
 
 export default App;
-
-{/* <Routes>
-  <Route path="/" element={<Homepage />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/projects" element={<Projects />} />
-</Routes> */}

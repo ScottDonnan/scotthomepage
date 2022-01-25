@@ -1,5 +1,4 @@
-import {Link} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import {useEffect} from 'react'
 
 function Navbar({goToSection, aboutEl, projectsEl, linkEl, educationEl, screenWidth}) {
     
@@ -21,10 +20,10 @@ function Navbar({goToSection, aboutEl, projectsEl, linkEl, educationEl, screenWi
     return(
         <nav id={navClass}>
             <ul>
-                <a href="#" onClick={(e) => goToSection(aboutEl, e)}>ABOUT</a>
-                <a href="#" onClick={(e) => goToSection(projectsEl, e)}>PROJECTS</a>
+                <button href="#" onClick={(e) => goToSection(aboutEl, e)}>ABOUT</button>
+                <button href="#" onClick={(e) => goToSection(projectsEl, e)}>PROJECTS</button>
                 {/* <a href='#' onClick={(e) => goToSection(educationEl, e)}>Education</a> */}
-                <a href="#" onClick={(e) => goToSection(linkEl, e)}>CONTACT</a>
+                <button href="#" onClick={(e) => goToSection(linkEl, e)}>CONTACT</button>
             </ul>
         </nav>
     )

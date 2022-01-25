@@ -1,5 +1,4 @@
 import '../App.css'
-import scott from '../images/IMG_4311.jpeg'
 import {useRef} from 'react'
 
 function About({screenWidth}) {

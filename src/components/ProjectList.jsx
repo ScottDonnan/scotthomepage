@@ -1,4 +1,3 @@
-import ProjectCard from "./ProjectCard"
 import deckBuilderThumb from '../images/deck-builder-thumb.png'
 import dictionaryThumb from '../images/dictionary-thumb.png'
 import runetradeThumb from '../images/runetrade-thumb.png'

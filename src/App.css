@@ -20,9 +20,13 @@
   align-items: center;
 }
 
-a {
+button {
+  cursor: pointer;
   text-decoration: none;
   color: #e76f51;
+  font-size: 15px;
+  background: none;
+  border: none;
 }
 
 h1 {
@@ -72,14 +76,14 @@ p {
   padding: 0;
 }
 
-#nav-list-large a {
+#nav-list-large button {
   /* margin: 1%, 5%; */
   border-radius: 5px;
   padding: 10px;
   margin-top: 20%;
 }
 
-#nav-list-large a:hover {
+#nav-list-large button:hover {
   background-color: #f4a261;
   color: white
 }
