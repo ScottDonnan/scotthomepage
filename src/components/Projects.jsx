@@ -10,8 +10,8 @@ function Projects({screenWidth}) {
     //                     </video>
 
     const runetradeDemo = "https://www.youtube.com/embed/QKCvQ8hZCig"
-    const dictionaryDemo = "https://drive.google.com/file/d/1hoCL4HC74nOjrJstKOhBY7JK1rmQDe09/preview"
-    const deckBuildingDemo = "https://drive.google.com/file/d/1iX1pzU66mTGpyzd2kyDtX-rFN2UIaJ-m/preview"
+    const dictionaryDemo = "https://www.youtube.com/embed/QzK3UfEkYXI"
+    const deckBuildingDemo = "https://www.youtube.com/embed/YPVNzigMX6Y"
 
     return(
         <div className="main-section">
