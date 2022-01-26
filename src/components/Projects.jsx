@@ -14,7 +14,6 @@ function Projects({screenWidth}) {
     const deckBuildingDemo = "https://www.youtube.com/embed/YPVNzigMX6Y"
 
     return(
-        <div className="main-section">
             <div className="projects">            
                 <h1>Projects</h1>
                 <Routes>
@@ -25,7 +24,6 @@ function Projects({screenWidth}) {
                     <Route path='dandd' element={<ProjectCard title={"Dungeons & Dragons Monster Compendium"} githubLink={"https://github.com/ScottDonnan/monster-project"} siteThumb={ddThumb} screenWidth={screenWidth}/> }/>
                 </Routes>
             </div>
-        </div>
     )
 }
 

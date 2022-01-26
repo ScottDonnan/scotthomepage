@@ -34,7 +34,8 @@ button {
   cursor: pointer;
   text-decoration: none;
   color: #e76f51;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 800;
   background: none;
   border: none;
 }
@@ -187,14 +188,9 @@ p {
 } */
 /* -----------------Projects------------------ */
 
-/* .projects {
-  background-color: #2a9d8f;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px black;
-  border-radius: 5px;
-  margin: 1%;
-  text-align: center;
-} */
+.projects {
+  width: 90%;
+}
 
 .projects h1 {
   padding-top: 10px;
