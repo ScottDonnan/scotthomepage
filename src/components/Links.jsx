@@ -7,9 +7,9 @@ import {init, sendForm} from '@emailjs/browser'
 
 function Links({screenWidth}) {
     const links = useRef(null)
-    const [name, setName] = useState('your name here')
-    const [email, setEmail] = useState('your email here')
-    const [content, setContent] = useState('your message')
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [content, setContent] = useState('')
 
     let linksClass;
     if (screenWidth > 800) {
@@ -43,11 +43,11 @@ function Links({screenWidth}) {
                 <div id="link-forms">
                     <form onSubmit={handleSubmit}>
                         <label for="name">Name</label><br/>
-                        <input className="form-input" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/><br/>
+                        <input className="form-input" type="text" name="name" placeholder="your name here" value={name} onChange={(e) => setName(e.target.value)}/><br/>
                         <label for="email">Email</label><br/>
-                        <input className="form-input" type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
-                        <lable for="content">Content</lable><br/>
-                        <textarea rows="3" cols="30" id="content" name="content" value={content} onChange={(e) => setContent(e.target.value)}/><br/>
+                        <input className="form-input" type="text" name="email" placeholder="your email here" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
+                        <label for="content">Content</label><br/>
+                        <textarea rows="3" cols="30" id="content" name="content" placeholder="send me a message" value={content} onChange={(e) => setContent(e.target.value)}/><br/>
                         <input id="submit-button" type="submit"/> 
                     </form>
                     <div id="prof-links">

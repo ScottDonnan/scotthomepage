@@ -32,7 +32,7 @@ function App() {
       <div ref={navEl}>
         <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
       </div>
-      <div className="container" ref={aboutEl}>
+      <div className="container" id="about-container" ref={aboutEl}>
         <About screenWidth={screenWidth}/>
       </div>
       <div className="container" ref={projectsEl}>
