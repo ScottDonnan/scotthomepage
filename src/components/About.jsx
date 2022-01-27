@@ -17,7 +17,7 @@ function About({screenWidth}) {
             <div ref={about} id={aboutId}>
                 <div className="about-div">
                     <div id="name">
-                        <h1>Scott</h1>
+                        <h1>Scotts</h1>
                         <h1>Donnan</h1>
                     </div>
                     <p>Full Stack Developer | MBA</p>
