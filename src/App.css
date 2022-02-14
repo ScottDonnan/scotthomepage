@@ -138,7 +138,11 @@ p {
 }
 
 #about-large #description {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
+}
+
+p {
+ width: 80%; 
 }
 
 .about-div {
@@ -166,7 +170,7 @@ p {
 }
 
 #about-small #description {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 /* #about-small div {
