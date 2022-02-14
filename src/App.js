@@ -33,7 +33,7 @@ function App() {
         <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
       </div>
       <div className="container" id="about-container" ref={aboutEl}>
-        <About screenWidth={screenWidth}/>
+        <About screenWidth={screenWidth} goToSection={goToSection} linkEl={linkEl}/>
       </div>
       <div className="container" ref={projectsEl}>
         <Projects screenWidth={screenWidth}/>
