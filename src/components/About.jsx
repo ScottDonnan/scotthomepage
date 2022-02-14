@@ -1,5 +1,4 @@
 import '../App.css'
-import scott from '../images/IMG_4311.jpeg'
 import {useRef} from 'react'
 
 function About({screenWidth, goToSection, linkEl}) {
@@ -13,7 +12,6 @@ function About({screenWidth, goToSection, linkEl}) {
     }
 
     return(
-        // <div ref={about} className="main-section">
             <div ref={about} id={aboutId}>
                 <div className="about-div">
                     <div id="name">
@@ -40,9 +38,7 @@ function About({screenWidth, goToSection, linkEl}) {
                     <p>If you're interested in working together or just want to connect, give me a shout.  My info is down at the bottom!</p>
                     <button onClick={(e) => goToSection(linkEl, e)}>Connect</button>
                 </div>
-                {/* <img id="about-pic" src={scott} alt="portrait of Scott Donnan"/> */}
             </div>
-        // </div>
     )
 }
 
