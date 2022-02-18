@@ -1,11 +1,6 @@
 
 .body {
-  /* background: url(./images/cosmic-timetraveler--SFhuMwFClk-unsplash.jpg) no-repeat center center fixed; */
-  background-color: #264653;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(./images/wov.png) center center fixed;
   text-align: center;
 }
 
@@ -26,7 +21,7 @@
 a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  background-color: #264653;
+  /* background-color: #264653; */
   border-radius: 5px;
 }
 
@@ -358,14 +353,14 @@ p {
 
 /* -----------------Links------------------ */
 
-/* #links-large {
-  background-color: #2a9d8f;
+#links-large {
+  /* background-color: #2a9d8f;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black;
   margin: 1%;
+  width: 50%; */
   text-align: center;
-  width: 50%;
-} */
+}
 
 /* #links-small {
   background-color: #2a9d8f;
@@ -379,6 +374,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2em;
 }
 
 #link-forms label {
@@ -443,4 +439,5 @@ textarea {
 #email {
   color: #ca6702;
   font-size: 3vw;
+  margin: auto;
 }
