@@ -1,12 +1,12 @@
 import '../App.css'
-import {useRef, useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 
 function About({screenWidth, show, setShow, goToSection, linkEl}) {
-    const skills = useRef(null)
+    // const skills = useRef(null)
     // let tracker = window.scrollY
     // const start = -0.5 * window.innerWidth - 730
     // const [positions, setPositions] = useState(0)
-    const [animate, setAnimate] = useState("hidden")
+    // const [animate, setAnimate] = useState("hidden")
     const [position, setPosition] = useState('title')
     const [view, setView] = useState({height: '100vh'})
 
@@ -63,20 +63,20 @@ function About({screenWidth, show, setShow, goToSection, linkEl}) {
                             <p>If you're interested in working together or just want to connect, give me a shout.  My info is down at the bottom!</p>
                         </div> 
                         
-    const skillList = <div ref={skills}>
-                            <ul className={animate}>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Ruby on Rails</li>
-                                <li>SQL</li>
-                                <li>ActiveRecord</li>
-                                <li>Teamwork</li>
-                                <li>Communication</li>
-                                <li>Business Administration</li>
-                                <li>Scheduling</li>
-                                <li>Kronos</li>
-                            </ul>
-                        </div>
+    // const skillList = <div ref={skills}>
+    //                         <ul className={animate}>
+    //                             <li>JavaScript</li>
+    //                             <li>React</li>
+    //                             <li>Ruby on Rails</li>
+    //                             <li>SQL</li>
+    //                             <li>ActiveRecord</li>
+    //                             <li>Teamwork</li>
+    //                             <li>Communication</li>
+    //                             <li>Business Administration</li>
+    //                             <li>Scheduling</li>
+    //                             <li>Kronos</li>
+    //                         </ul>
+    //                     </div>
 
     return(
             <div id={aboutId} style={view}>
@@ -88,7 +88,7 @@ function About({screenWidth, show, setShow, goToSection, linkEl}) {
                 </div>
                 {show ? description : null}
                 {/* <button id='skills-button' onClick={handleClick}>Skills</button> */}
-                {show ? skillList : null}
+                {/* {show ? skillList : null} */}
             </div>
     )
 }
