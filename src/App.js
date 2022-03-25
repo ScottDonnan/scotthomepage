@@ -7,6 +7,7 @@ import {useRef, useEffect, useState} from 'react'
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [show, setShow] = useState(null)
 
   const linkEl = useRef(null)
   const educationEl = useRef(null)
@@ -18,7 +19,9 @@ function App() {
     function handleResize() {
         setScreenWidth(window.innerWidth)
     }
-      
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
     window.addEventListener('resize', handleResize)
   })
   
@@ -30,10 +33,10 @@ function App() {
   return (
     <div id="test">
       <div ref={navEl}>
-        <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth}/>
+        <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth} show={show} setShow={setShow}/>
       </div>
       <div className="container" id="about-container" ref={aboutEl}>
-        <About screenWidth={screenWidth} goToSection={goToSection} linkEl={linkEl}/>
+        <About screenWidth={screenWidth} goToSection={goToSection} linkEl={linkEl} show={show} setShow={setShow}/>
       </div>
       <div className="container" ref={projectsEl}>
         <Projects screenWidth={screenWidth}/>

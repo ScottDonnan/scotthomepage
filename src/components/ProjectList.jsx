@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 
 function ProjectList({screenWidth}) {
     let projectsClass;
-    if (screenWidth > 800) {
+    if (screenWidth > 900) {
         projectsClass = 'project-list-large'
     } else {
         projectsClass = 'project-list-small'

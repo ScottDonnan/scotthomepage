@@ -32,7 +32,7 @@ a {
 button {
   cursor: pointer;
   text-decoration: none;
-  color: #e76f51;
+  color: black;
   font-size: 18px;
   font-weight: 800;
   background: none;
@@ -51,6 +51,7 @@ ul {
 
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 #to-top-button {
@@ -70,8 +71,16 @@ p {
 } */
 
 /* -----------------navbar section------------------ */
+
+@keyframes swipein {
+  0% {transform: translate(-60vw)}
+  100% {transform: translate(0)}
+}
+
 #nav-list-large {
   /* background-color: aquamarine; */
+  animation: swipein;
+  animation-duration: 3s;
   position: fixed;
   left: 1%;
   top: 10%;
@@ -91,10 +100,11 @@ p {
   border-radius: 5px;
   padding: 10px;
   margin-top: 20%;
+  margin-left: 10%;
 }
 
 #nav-list-large button:hover {
-  background-color: #f4a261;
+  background-color: black;
   color: white
 }
 
@@ -115,7 +125,7 @@ p {
 }
 
 #nav-list-small a:hover {
-  background-color: #f4a261;
+  background-color: black;
   color: white
 }
 
@@ -134,6 +144,7 @@ p {
   flex-direction: column;
   align-items: center;
   width: 90%;
+  height: 100vh;
 }
 
 #about-large #description {
@@ -141,19 +152,27 @@ p {
 }
 
 p {
- width: 80%; 
+ width: 95%;
+ font-size: 20px; 
+}
+
+@keyframes fadein{
+  0% {opacity: 0;}
+  100% {opacity: 100;}
 }
 
 .about-div {
+  animation: fadein;
+  animation-duration: 2s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #94d2bd;
-  box-shadow: 5px 5px 10px black;
-  border-radius: 5px;
   margin: 1%;
   padding: 1%;
   width: 90%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+
 }
 
 .about-div button:hover {
@@ -166,10 +185,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* height: 50vh; */
 }
 
 #about-small #description {
   padding-bottom: 60px;
+}
+
+#description {
+  background: rgba(128, 128, 128, 0.5);
+  width: 75%;
+  border-radius: 20px;
 }
 
 /* #about-small div {
@@ -179,6 +205,16 @@ p {
   margin: 1%;
   padding: 1%;
 } */
+
+#title {
+  animation: fadein;
+  animation-duration: 3s;
+  transform: translate(0, 25vh) scale(1.5, 1.5);
+}
+
+#title-top {
+  transition-duration: 1s;
+}
 
 #name {
   display: flex;
@@ -198,11 +234,92 @@ p {
   border-radius: 5px;
 }
 
+@keyframes slidein {
+  0% {
+    transform: scale(0, .025);
+  }
+
+  50% {
+    transform: scale(1, .025);
+  }
+}
+
+@keyframes slideout {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1, .025);
+  }
+
+  99% {
+    transform: scale(0, .025);
+  }
+
+  100% {
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes bounce {
+
+  10% {
+    transform: scale(1, .5)
+  }
+
+  50% {
+    transform: translate(0, -10px)  
+  }
+}
+
+#skills-button {
+  animation-name: bounce;
+  animation-duration: .5s;
+  animation-delay: 10s;
+  animation-iteration-count: 3;
+}
+
 .skill-list {
+  animation-name: slideout;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   margin: 2%;
   list-style-type: none;
+  background-color: green;
+}
+
+.skills-animate {
+  animation-name: slidein;
+  animation-duration: 2s;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 2%;
+  list-style-type: none;
+  background-color: green;
+}
+
+.hidden {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 2%;
+  list-style-type: none;
+  background-color: green;
+  visibility: hidden;
+}
+
+.skills-animate li {
+  width: 47%;
+  margin: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color:white;
+  color: white;
 }
 
 .skill-list li {
@@ -210,7 +327,8 @@ p {
   margin: 1%;
   border-width: 1px;
   border-style: solid;
-  border-color:#ca6702;
+  border-color:white;
+  color: white;
 }
 
 /* -----------------Projects------------------ */
@@ -285,12 +403,13 @@ p {
   border-color: black;
   border-width: 1px; */
   margin: 2%;
+  transition-duration: .5s;
 }
 
 #project-list-large a:hover {
   transform: translate(5px, -5px);
-  transition-duration: .5s;
 }
+
 #project-list-small {
   display: flex;
   flex-direction: column;
@@ -441,7 +560,7 @@ textarea {
 }
 
 #email {
-  color: #ca6702;
+  color: white;
   font-size: 3vw;
   margin: auto;
 }
