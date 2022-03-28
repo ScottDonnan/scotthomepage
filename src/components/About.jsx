@@ -56,7 +56,7 @@ function About({screenWidth, show, setShow, goToSection, linkEl}) {
     const description = <div className="about-div" id="description">
                             <h3>About Me</h3>
                             <p>Hi I'm Scott Donnan, a full stack developer with a diverse professional background.  I've spent over 10 years in business management, hospitality, retail, and music performance.  I have experience working with Ruby on Rails, JavaScript, and React.  My passion is creating new programs and solutions centered on improving customer experiences through technology.</p>
-                            <p>Most recently I worked with an amazing group of people for Apple on the retail team.  I was promoted through a host of positions performing job duties that included store scheduling, inventory management, technical support, and sales.  I am always striving to do the best work of my life, help others, and learn something I didn't know yesterday.  Over the years I have cultivated a host of skills including:</p>
+                            <p>Most recently I worked with an amazing group of people for Apple on the retail team.  I was promoted through a host of positions performing job duties that included store scheduling, inventory management, technical support, and sales.  I am always striving to do the best work of my life, help others, and learn something I didn't know yesterday.</p>
                             
                             <p>If you're interested in working together or just want to connect, give me a shout.  My info is down at the bottom!</p>
                         </div> 
