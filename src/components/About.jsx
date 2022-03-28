@@ -1,5 +1,5 @@
 import '../App.css'
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 
 function About({screenWidth, show, setShow, goToSection, linkEl}) {
     // const skills = useRef(null)
@@ -27,15 +27,12 @@ function About({screenWidth, show, setShow, goToSection, linkEl}) {
     //     }
     // }
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll)
         function handleScroll() {
             setShow(true)
             setPosition('title-top')
             setView(null)
         }
-
-    }, [])
 
 
     // function handleScroll() {
