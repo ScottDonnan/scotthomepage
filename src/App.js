@@ -32,8 +32,6 @@ function App() {
   
   return (
     <div id="test">
-      <button className='bbb'>TEST</button>
-      <button className='bbb'>TEST</button>
       <div ref={navEl}>
         <Navbar goToSection={goToSection} linkEl={linkEl} educationEl={educationEl} aboutEl={aboutEl} projectsEl={projectsEl} screenWidth={screenWidth} show={show} setShow={setShow}/>
       </div>
